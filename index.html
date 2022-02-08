@@ -10,30 +10,44 @@
     <form id="form">
       <label for="number label" > Number  :</label>
       <input type="text" id="TextBox">
+      <input type="text" id="TextBox2">
+
       
 
-      <input type="button" value="Check Number" onclick="isEven()">
+      <input type="button" value="Check Number" onclick="addition(); isEven()">
 
     </form>
 
    
 </body>
-<script src="EvenOdd.js">
+<script >
 
-// function isEven(){
+function isEven(){
 
-// var number = document.getElementById("TextBox").value;
+let number = document.getElementById("TextBox").value;
+let number2 = document.getElementById("TextBox2").value;
 
-// if(number %2 === 0){
 
-// alert(number + " number is even!");
+if(number %2 === 0){
 
-// }else{
-//   alert(number + " number is odd!");
-// }
+alert(number + " number is even!");
+document.write(number + " is even number");
 
-// }
+}else{
+  // document.write(number + " is odd number");
+  alert(number + " number is Odd!");
 
+}
+
+}
+function addition (){
+
+  let number = document.getElementById("TextBox").value;
+  let number2 = document.getElementById("TextBox2").value;
+  document.write(parseInt(number) + parseInt(number2) );
+  alert(parseInt(number) + parseInt(number2));
+
+}
 
 </script>
 
