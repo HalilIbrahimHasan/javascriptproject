@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>My Dom Project</title>
+</head>
+<body onload="alert('Hello world')">
+    <h1> My heading</h1>
+    <ul id="items"></ul>
+    <form id="form">
+      <label for="number label" > Car  :</label>
+      <input type="text" id="TextBox">
+      <input type="text" id="TextBox2">
+
+      <input type="button" value="Check Car" onclick="myCar.show()">
+    
+    </form>
+
+   
+</body>
+
+<script type="text/javascript">
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return 'I have a ' + this.carname;
+  }
+}
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+  show() {
+    return this.present() + ', it is a ' + this.model;
+  }
+}
+let myCar = new Model("Ford", "Mustang");
+// document.getElementById("demo").innerHTML = myCar.show();
+
+console.log(myCar.present());
+console.log(myCar.show());
+
+</script>
+
+
+</html>

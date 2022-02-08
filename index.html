@@ -7,32 +7,35 @@
 <body onload="alert('Hello world')">
     <h1> My heading</h1>
 
-    <script>
-             
-class Car {
-  constructor(brand) {
-    this.carname = brand;
-  }
-  present() {
-    return 'I have a ' + this.carname;
-  }
-}
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
-  }
-  show() {
-    return this.present() + ', it is a ' + this.model;
-  }
-}
-let myCar = new Model("Ford", "Mustang");
-// document.getElementById("demo").innerHTML = myCar.show();
+    <form id="form">
+      <label for="number label" > Number  :</label>
+      <input type="text" id="TextBox">
+      
 
-console.log(myCar.present());
+      <input type="button" value="Check Number" onclick="isEven()">
 
-alert('This is javascript');
+    </form>
 
-    </script>
+   
 </body>
+<script>
+
+function isEven(){
+
+var number = document.getElementById("TextBox").value;
+
+if(number %2 === 0){
+
+alert(number + " number is even!");
+
+}else{
+  alert(number + " number is odd!");
+}
+
+}
+
+
+</script>
+
+
 </html>
