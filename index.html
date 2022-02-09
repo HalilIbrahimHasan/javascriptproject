@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>My Dom Project</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Dom Project</title>
+
+
+
+
 </head>
-<body onload="alert('Hello world')">
-    <h1> My heading</h1>
 
-    <form id="form">
-      <label for="number label" > Number  :</label>
-      <input type="text" id="TextBox">
-      <input type="text" id="TextBox2">
+<body>
+    <h1> MY Heading for project</h1>
 
-      
 
-      <input type="button" value="Check Number" onclick="addition(); isEven()">
+        <form id="form">
 
-    </form>
+                <label for="number label"> Number: </label>
+                <input type="text" id="TextBox" >
+                <input type="text" id="TextBox2" >
 
-   
+                <input type="button" value="Check Number" onclick="addition(); subtraction();multiplication();division()">
+                //;
+
+        </form>
+
+
+
 </body>
-<script >
-
-function isEven(){
-
-let number = document.getElementById("TextBox").value;
-let number2 = document.getElementById("TextBox2").value;
 
 
-if(number %2 === 0){
+<script src="Day07_Calculator.js">
 
-alert(number + " number is even!");
-document.write(number + " is even number");
 
-}else{
-  // document.write(number + " is odd number");
-  alert(number + " number is Odd!");
 
-}
 
-}
-function addition (){
-
-  let number = document.getElementById("TextBox").value;
-  let number2 = document.getElementById("TextBox2").value;
-  document.write(parseInt(number) + parseInt(number2) );
-  alert(parseInt(number) + parseInt(number2));
-
-}
 
 </script>
+
+
 
 
 </html>
